@@ -764,3 +764,12 @@ body {
     padding: 17px 43px 15px;
     min-width: 252px;
 }
+
+.banner {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.products-popular {
+    margin-bottom: 80px;
+}
