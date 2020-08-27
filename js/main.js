@@ -14,27 +14,6 @@ $('.products-slider').slick({
 	arrows: true
 });
 
-let tab = document.querySelectorAll('.tab');
-let content = document.querySelectorAll('.tabs-content');
-
-for (let i = 0; i < tab.length; i++) {
-
-	tab[i].addEventListener('click', function(e) {
-		e.preventDefault();
-
-		for (let j = 0; j < tab.length; j++) {
-			tab[j].classList.remove('tab--active')
-		}
-		this.classList.add('tab--active');
-
-		for (let a = 0; a < content.length; a++) {
-			content[a].classList.remove('tabs-content--active');
-		}
-
-		content[i].classList.add('tabs-content--active');
-	});
-}
-
 
 let favorite = document.querySelectorAll('.product-item__favorite');
 
@@ -44,3 +23,45 @@ for (let i = 0; i < favorite.length; i++) {
 	})
 }
 
+
+let tab = document.querySelectorAll('.tab');
+let content = document.querySelectorAll('.tabs-content');
+
+
+for (let i = 0; i < tab.length; i++) {
+	tab[i].addEventListener('click', function(e) {
+		e.preventDefault();
+		for (let j = 0; j < tab.length; j++) {
+			tab[j].classList.remove('tab--active');
+		}
+		this.classList.add('tab--active');
+		for (let j = 0; j < content.length; j++) {
+			content[j].classList.remove('tabs-content--active');
+		}
+		content[i].classList.add('tabs-content--active');
+	})
+}
+
+let tabAside = document.querySelectorAll('.tab.aside-filter__tab');
+let contentAside = document.querySelectorAll('.tabs-content.aside-filter-content');
+
+for (let i = 0; i < tabAside.length; i++) {
+	tabAside[i].addEventListener('click', function (e) {
+		e.preventDefault();
+		for (let j = 0; j < tabAside.length; j++) {
+			tabAside[j].classList.remove('tab--active');
+		}
+		this.classList.add('tab--active');
+		for (let j = 0; j < contentAside.length; j++) {
+			contentAside[j].classList.remove('tabs-content--active');
+		}
+		contentAside[i].classList.add('tabs-content--active');
+	})
+}
+
+
+let menuBtn = document.querySelector('.menu__btn');
+
+menuBtn.addEventListener('click', function() {
+	document.querySelector('.menu-mobile__list').classList.toggle('active');
+});
