@@ -238,13 +238,15 @@
 		</div>
 	</section>
 
-	<!-- <section class="search">
+	<section class="search">
 		<div class="container">
 			<div class="search__inner">
 				<div class="search__tabs">
-					<a class="tab search__tabs-item tab--active" href="#tab-1">Поиск по номеру</a>
-					<a class="tab search__tabs-item" href="#tab-2">Поиск по марке</a>
-					<a class="tab search__tabs-item" href="#tab-3">Поиск по названию товара</a>
+					<div class="search__wrapper">
+						<a class="tab search__tabs-item tab--active" href="#tab-1">Поиск по номеру</a>
+						<a class="tab search__tabs-item" href="#tab-2">Поиск по марке</a>
+						<a class="tab search__tabs-item" href="#tab-3">Поиск по названию товара</a>
+					</div>
 				</div>
 				<div class="search__content">
 					<div class=" tabs-content search__content-item tabs-content--active" id="tab-1">
@@ -337,12 +339,14 @@
 				<h3 class="product__title">Популярные товары</h3>
 				<div class="tabs-wrapper">
 					<div class="tabs products__tabs">
-						<a class="tab tab--active products__tab" href="#">запчасти</a>
-						<a class="tab products__tab" href="#">моторы</a>
-						<a class="tab products__tab" href="#">шины</a>
-						<a class="tab products__tab" href="#">электроника</a>
-						<a class="tab products__tab" href="#">инструменты</a>
-						<a class="tab products__tab" href="#">аксессуары</a>
+						<div class="products__tabs-wrapper">
+							<a class="tab tab--active products__tab" href="#">запчасти</a>
+							<a class="tab products__tab" href="#">моторы</a>
+							<a class="tab products__tab" href="#">шины</a>
+							<a class="tab products__tab" href="#">электроника</a>
+							<a class="tab products__tab" href="#">инструменты</a>
+							<a class="tab products__tab" href="#">аксессуары</a>
+						</div>
 					</div>
 					<div class="tabs-container products__container">
 						<div class="tabs-content tabs-content--active products__content">
@@ -459,6 +463,7 @@
 		</div>
 	</section>
 
+
 	<div class="banner">
 		<div class="container">
 			<a class="banner__link" href="">
@@ -467,18 +472,21 @@
 		</div>
 	</div>
 
+	
 	<section class="products products-popular">
 		<div class="container">
 			<div class="products__inner">
 				<h3 class="product__title">С этим товаром покупают</h3>
 				<div class="tabs-wrapper">
 					<div class="tabs products__tabs">
-						<a class="tab tab--active products__tab" href="#">запчасти</a>
-						<a class="tab products__tab" href="#">моторы</a>
-						<a class="tab products__tab" href="#">шины</a>
-						<a class="tab products__tab" href="#">электроника</a>
-						<a class="tab products__tab" href="#">инструменты</a>
-						<a class="tab products__tab" href="#">аксессуары</a>
+						<div class="products__tabs-wrapper">
+							<a class="tab tab--active products__tab" href="#">запчасти</a>
+							<a class="tab products__tab" href="#">моторы</a>
+							<a class="tab products__tab" href="#">шины</a>
+							<a class="tab products__tab" href="#">электроника</a>
+							<a class="tab products__tab" href="#">инструменты</a>
+							<a class="tab products__tab" href="#">аксессуары</a>
+						</div>
 					</div>
 					<div class="tabs-container products__container">
 						<div class="tabs-content tabs-content--active products__content">
@@ -588,10 +596,14 @@
 						<div class="tabs-content products__content"></div>
 					</div>
 				</div>
+				<div class="product-more">
+					<a class="product-more__link" href="#">Показать еще</a>
+				</div>
 			</div>
 		</div>
 	</section>
 
+<!-- 
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__top">

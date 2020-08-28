@@ -26,7 +26,44 @@ $('.products-slider').slick({
 	// autoplaySpeed: 2000,
 	infinite: true,
 	slidesToShow: 4,
-	arrows: true
+	arrows: true,
+	responsive: [
+		{
+			breakpoint: 1260,
+			settings: {
+				arrows: false,
+				dots: true,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 1152,
+			settings: {
+				dots: true,
+				arrows: false,
+				slidesToScroll: 1,
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 862,
+			settings: {
+				dots: true,
+				arrows: false,
+				slidesToScroll: 2,
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 591,
+			settings: {
+				dots: true,
+				arrows: false,
+				slidesToScroll: 1,
+				slidesToShow: 1,
+			}
+		},
+	]
 });
 
 
@@ -76,7 +113,11 @@ for (let i = 0; i < tabAside.length; i++) {
 
 
 let menuBtn = document.querySelector('.menu__btn');
+let menuLine = document.querySelectorAll('.menu__btn-line');
 
 menuBtn.addEventListener('click', function() {
 	document.querySelector('.menu-mobile__list').classList.toggle('active');
+	for( let i = 0; i < menuLine.length; i++) {
+		menuLine[i].classList.toggle('active');
+	}
 });
