@@ -4,6 +4,21 @@ $('.banner-section__slider').slick({
 	autoplay: true,
 	autoplaySpeed: 2000,
 	infinite: true,
+	responsive: [
+		{
+			breakpoint: 968,
+			settings: {
+				centerMode: true,
+				centerPadding: '0',
+			}
+		},
+		{
+			breakpoint: 640,
+			settings: {
+				arrows: false,
+			}
+		},
+	]
 });
 
 $('.products-slider').slick({

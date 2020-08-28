@@ -747,6 +747,7 @@ body {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     transform: translateX(-110%);
     transition: 0.5s;
+    z-index: 5;
 }
 
 .menu-mobile__list.active {
