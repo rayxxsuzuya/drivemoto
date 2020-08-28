@@ -121,3 +121,26 @@ menuBtn.addEventListener('click', function() {
 		menuLine[i].classList.toggle('active');
 	}
 });
+
+let footTitle = document.querySelectorAll('.footer__top-title');
+let footList = document.querySelectorAll('.footer-list');
+
+let titleFirst = footTitle[1];
+let listFirst = footList[0];
+
+let titleSecond = footTitle[2];
+let listSecond = footList[1];
+
+$(document).ready(function () {
+	$(titleFirst).click(function () {
+		$(listFirst).slideToggle("slow");
+		this.classList.toggle('active');
+	});
+	$(titleSecond).click(function () {
+		$(listSecond).slideToggle("slow");
+		this.classList.toggle('active');
+	});
+});
+
+console.log(titleFirst);
+console.log(listFirst);
